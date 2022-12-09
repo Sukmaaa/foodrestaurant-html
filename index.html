@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Restoran</title>
+    <title>Foodies</title>
 
     <!-- CSS & ASSETS ICON -->
     <link rel="stylesheet" href="./assets/style.css" />
@@ -34,10 +34,10 @@
 
       <ul class="navbar">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">Tentang</a></li>
         <li><a href="#menu">Menu</a></li>
-        <li><a href="#services">Service</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#contact">Hubungi Kami</a></li>
       </ul>
     </header>
 
@@ -50,7 +50,7 @@
           Makanan Adalah <br />
           Hal Yang Paling Berharga
         </h2>
-        <a href="#" class="btn">Menu Unggulan</a>
+        <a href="#menu" class="btn">Menu Unggulan</a>
       </div>
 
       <div class="home-img">
@@ -152,7 +152,7 @@
         Kami membuat makanan berkualitas <br />
         Setiap hari
       </h2>
-      <a href="#" class="btn">Hubungi Kami</a>
+      <a href="#contact" class="btn">Hubungi Kami</a>
     </section>
 
     <!-- FOOTER -->
@@ -163,19 +163,19 @@
           <div class="col">
             <h4>Menu Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Tentang</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Pelayanan</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Tentang</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#services">Layanan</a></li>
+              <li><a href="#contact">Hubungi Kami</a></li>
             </ul>
           </div>
 
           <div class="col">
             <h4>Informasi</h4>
             <ul>
-              <li><a href="#">Tentang Kami</a></li>
-              <li><a href="#">Informasi Pengiriman</a></li>
+              <li><a href="#about">Tentang Kami</a></li>
+              <li><a href="#services">Informasi Pengiriman</a></li>
               <li><a href="#">Kebijakan Privasi</a></li>
               <li><a href="#">Syarat & Ketentuan</a></li>
             </ul>
@@ -193,5 +193,21 @@
         </div>
       </div>
     </section>
+
+    <!-- JS untuk responsive mobile di bagian navbar -->
+
+    <script type="text/javascript">
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector(".navbar")
+
+      menu.addEventListener("click", function() {
+        navbar.classList.toggle("active")
+        
+      });
+
+      window.onscroll = () => {
+        navbar.classList.remove("active")
+      }
+    </script> 
   </body>
 </html>
