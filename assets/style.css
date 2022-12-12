@@ -334,8 +334,10 @@ section {
   background: var(--text-color);
 }
 
-/* CSS DETAIL ABOUT */
+/* CSS COMPONONENTS */
 
+
+/* CSS DETAIL ABOUT */
 .margin {
   margin-top: 40%;
 }
@@ -361,6 +363,34 @@ section {
   color: #feeee7;
   text-align: center;
 }
+
+/* CSS DETAIL MENU */
+
+.detail-menu {
+  width: 100%;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  align-items: center;
+}
+
+.detail-menu-img img {
+  max-width: 100%;
+  width: 350px;
+  height: auto;
+}
+
+.detail-menu-text h1 {
+  font-size: var(--big-font);
+  color: var(--main-color);
+}
+
+.detail-menu-text h2 {
+  font-size: var(--h2-font);
+  margin: 1rem 0 2rem;
+}
+
 
 /* RESPONSIVE */
 

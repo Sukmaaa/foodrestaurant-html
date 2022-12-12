@@ -1,0 +1,17 @@
+[
+  {
+    "img": "s1.png", 
+    "title": "Memesan", 
+    "desc" : "Pemesanan makanan kami proses sesuai dengan pesanan anda"
+  },
+  {
+    "img": "s2.png", 
+    "title": "Pengiriman", 
+    "desc" : "Kami akan mengantar pesanan anda sesuai tujuan dan tepat waktu"
+  },
+  {
+    "img": "s3.png", 
+    "title": "Terkirim", 
+    "desc" : "Pesanan diterima dengan aman ke penerima"
+  }
+]

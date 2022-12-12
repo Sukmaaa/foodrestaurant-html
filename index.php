@@ -1,52 +1,12 @@
-<?php 
-  include "./data.php";
-
-  $data_menu = json_encode($dataMenu);
-  echo $data_menu;
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foodies</title>
-
-    <!-- CSS & ASSETS ICON -->
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="./assets/image/favicon.jpg"
-      type="image/x-icon"
-    />
-
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+  <?php 
+    $dataMenu = file_get_contents("./assets/data/dataMenu.json");
+    $data_menu = json_decode($dataMenu);
+    $dataLayanan = file_get_contents("./assets/data/dataLayanan.json");
+    $data_layanan = json_decode($dataLayanan);
+  ?>
     <!-- HEADER -->
-    <header>
-      <a href="#" class="logo">Foodies</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
 
-      <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#services">Layanan</a></li>
-        <li><a href="#contact">Hubungi Kami</a></li>
-      </ul>
-    </header>
+    <?php include './components/header.php';?>
 
     <!-- HOME -->
 
@@ -82,7 +42,7 @@
           Foodies menyediakan makanan cepat saji dalam waktu pembuatan yang
           cepat dan memiliki rasa yang enak sehingga bisa langsung dinikmati
         </p>
-        <a href="#" class="btn">Pelajari lebih lanjut</a>
+        <a href="./detailMenu.php" class="btn">Pelajari lebih lanjut</a>
       </div>
     </section>
 
@@ -95,33 +55,19 @@
       </div>
 
       <div class="menu-container">
+        <?php
+          foreach($data_menu as $value){
+        ?>
         <div class="box">
           <div class="box-img">
-            <img src="./assets/image/food1.png" alt="" />
+            <img src="./assets/image/<?= $value->img?>" alt="" />
           </div>
-          <h2>Chicken Burger</h2>
-          <h3>Makanan cepat saji</h3>
-          <span>Rp 20.000</span>
+          <h2><?= $value->title?></h2>
+          <h3><?= $value->desc?></h3>
+          <span><?= $value->harga?></span>
           <i class="bx bx-cart-alt"></i>
         </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./assets/image/food2.png" alt="" />
-          </div>
-          <h2>Special Beef Burger</h2>
-          <h3>Makanan cepat saji</h3>
-          <span>Rp 40.000</span>
-          <i class="bx bx-cart-alt"></i>
-        </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./assets/image/food3.png" alt="" />
-          </div>
-          <h2>Chicken Fry Pack</h2>
-          <h3>Makanan cepat saji</h3>
-          <span>Rp 50.000</span>
-          <i class="bx bx-cart-alt"></i>
-        </div>
+        <?php }; ?>
       </div>
     </section>
 
@@ -134,21 +80,17 @@
       </div>
 
       <div class="services-container">
-        <div class="s-box">
-          <img src="./assets/image/s1.png" alt="" />
-          <h3>Memesan</h3>
-          <p>Pemesanan makanan kami proses sesuai dengan pesanan anda</p>
-        </div>
-        <div class="s-box">
-          <img src="./assets/image/s2.png" alt="" />
-          <h3>Pengiriman</h3>
-          <p>Kami akan mengantar pesanan anda sesuai tujuan dan tepat waktu</p>
-        </div>
-        <div class="s-box">
-          <img src="./assets/image/s3.png" alt="" />
-          <h3>Terkirim</h3>
-          <p>Pesanan diterima dengan aman ke penerima</p>
-        </div>
+        <?php 
+          foreach($data_layanan as $value){
+        ?>
+          <div class="s-box">
+            <img src="./assets/image/<?= $value->img ?>" alt="" />
+            <h3><?= $value->title ?></h3>
+            <p><?= $value->desc ?></p>
+          </div>
+        <?php
+          }
+        ?>
       </div>
     </section>
 
@@ -164,56 +106,6 @@
 
     <!-- FOOTER -->
 
-    <section id="contact">
-      <div class="footer">
-        <div class="main">
-          <div class="col">
-            <h4>Menu Links</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">Tentang</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#services">Layanan</a></li>
-              <li><a href="#contact">Hubungi Kami</a></li>
-            </ul>
-          </div>
+    <?php include './components/footer.php'; ?>
 
-          <div class="col">
-            <h4>Informasi</h4>
-            <ul>
-              <li><a href="#about">Tentang Kami</a></li>
-              <li><a href="#services">Informasi Pengiriman</a></li>
-              <li><a href="#">Kebijakan Privasi</a></li>
-              <li><a href="#">Syarat & Ketentuan</a></li>
-            </ul>
-          </div>
-
-          <div class="col">
-            <h4>Hubungi Kami</h4>
-            <div class="social">
-              <a href="#"><i class="bx bxl-facebook"></i></a>
-              <a href="#"><i class="bx bxl-instagram"></i></a>
-              <a href="#"><i class="bx bxl-twitter"></i></a>
-              <a href="#"><i class="bx bxl-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- JS untuk responsive mobile di bagian navbar -->
-
-    <script type="text/javascript">
-      let menu = document.querySelector('#menu-icon');
-      let navbar = document.querySelector(".navbar");
-
-      menu.addEventListener("click", function() {
-        navbar.classList.toggle("active")
-      });
-
-      window.onscroll = () => {
-        navbar.classList.remove("active")
-      }
-    </script> 
-  </body>
-</html>
+    
