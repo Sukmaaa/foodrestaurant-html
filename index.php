@@ -1,3 +1,10 @@
+<?php 
+  include "./data.php";
+
+  $data_menu = json_encode($dataMenu);
+  echo $data_menu;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

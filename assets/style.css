@@ -429,4 +429,8 @@ section {
   .col {
     width: 100%;
   }
+
+  .cta h2 {
+    margin-bottom: 70px;
+  }
 }
