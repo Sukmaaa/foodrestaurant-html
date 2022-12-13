@@ -3,16 +3,12 @@
 
   <section class="detail-menu" id="detail-menu" >
     <div class="detail-menu-img">
-      <img width="300px" src="./assets/image/bg-image.jpg" alt="" />
+      <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" />
     </div>
 
     <div class="detail-menu-text">
       <h1>Food Court</h1>
-      <h2>
-        Makanan Adalah <br />
-        Hal Yang Paling Berharga
-      </h2>
-      <a href="#menu" class="btn">Menu Unggulan</a>
+      <p>Descripsi bla bla bla bla</p>
     </div>
   </section>
 

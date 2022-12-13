@@ -336,7 +336,6 @@ section {
 
 /* CSS COMPONONENTS */
 
-
 /* CSS DETAIL ABOUT */
 .margin {
   margin-top: 40%;
@@ -370,15 +369,17 @@ section {
   width: 100%;
   min-height: 90vh;
   display: grid;
+  gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
   align-items: center;
 }
 
 .detail-menu-img img {
+  position: sticky;
   max-width: 100%;
-  width: 350px;
+  width: 500px;
   height: auto;
+  top: 20px;
 }
 
 .detail-menu-text h1 {
@@ -390,7 +391,6 @@ section {
   font-size: var(--h2-font);
   margin: 1rem 0 2rem;
 }
-
 
 /* RESPONSIVE */
 
