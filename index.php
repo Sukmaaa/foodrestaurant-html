@@ -42,7 +42,7 @@
           Foodies menyediakan makanan cepat saji dalam waktu pembuatan yang
           cepat dan memiliki rasa yang enak sehingga bisa langsung dinikmati
         </p>
-        <a href="./detailAbout.html" class="btn">Pelajari lebih lanjut</a>
+        <a href="./detailAbout.php" class="btn">Pelajari lebih lanjut</a>
       </div>
     </section>
 
@@ -103,7 +103,7 @@
         Kami membuat makanan berkualitas <br />
         Setiap hari
       </h2>
-      <a href="#contact" class="btn">Hubungi Kami</a>
+      <a href="./formContact.php" class="btn">Hubungi Kami</a>
     </section>
 
     <!-- FOOTER -->

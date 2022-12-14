@@ -4,7 +4,8 @@
 
 <?php include './components/header.php' ?>
 
-  <section class="margin" id="detail-menu">
+<div class="about-container">
+  <div class="margin-menu">
     <div class="menu-container">
       <div class="box-about">
         <div class="detail-menu">
@@ -57,7 +58,7 @@
             </div>
           <?php } else { ?>
             <div class="detail-menu-img">
-              <img src="https://images.unsplash.com/photo-1606502973842-f64bc2785fe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" style="height: 700px !important;" alt="" />
+              <img src="https://images.unsplash.com/photo-1606502973842-f64bc2785fe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" />
             </div>
 
             <div class="detail-menu-text">
@@ -82,6 +83,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
 <?php include './components/footer.php' ?>
