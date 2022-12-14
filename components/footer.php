@@ -25,10 +25,10 @@
       <div class="col">
         <h4>Hubungi Kami</h4>
         <div class="social">
-          <a target="_blank" href="#"><i class="bx bxl-facebook"></i></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100088685919273&mibextid=ZbWKwL"><i class="bx bxl-facebook"></i></a>
           <a target="_blank" href="https://www.instagram.com/foodies2022_/?next=%2F&hl=id"><i class="bx bxl-instagram"></i></a>
-          <a target="_blank" href="#"><i class="bx bxl-twitter"></i></a>
-          <a target="_blank" href="#"><i class="bx bxl-youtube"></i></a>
+          <a target="_blank" href="https://twitter.com/makandifoodies?t=Ptq7CPzRfd_Oqq4I1TG6ww&s=09"><i class="bx bxl-twitter"></i></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCnVlSmBXeWab1SRXc0mGAKw"><i class="bx bxl-youtube"></i></a>
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@
           Foodies menyediakan makanan cepat saji dalam waktu pembuatan yang
           cepat dan memiliki rasa yang enak sehingga bisa langsung dinikmati
         </p>
-        <a href="./detailMenu.php" class="btn">Pelajari lebih lanjut</a>
+        <a href="./detailAbout.html" class="btn">Pelajari lebih lanjut</a>
       </div>
     </section>
 
@@ -56,17 +56,19 @@
 
       <div class="menu-container">
         <?php
-          foreach($data_menu as $value){
+          foreach($data_menu as $key => $value){
         ?>
-        <div class="box">
-          <div class="box-img">
-            <img src="./assets/image/<?= $value->img?>" alt="" />
+        <a href="./detailMenu.php?id_menu=<?php echo $key ?>">
+          <div class="box">
+            <div class="box-img">
+              <img src="./assets/image/<?= $value->img?>" alt="" />
+            </div>
+            <h2><?= $value->title?></h2>
+            <h3><?= $value->desc?></h3>
+            <span><?= $value->harga?></span>
+            <i class="bx bx-cart-alt"></i>
           </div>
-          <h2><?= $value->title?></h2>
-          <h3><?= $value->desc?></h3>
-          <span><?= $value->harga?></span>
-          <i class="bx bx-cart-alt"></i>
-        </div>
+        </a>
         <?php }; ?>
       </div>
     </section>
