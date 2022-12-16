@@ -42,7 +42,7 @@
               <h1>Special Beef Burger With Double Beef</h1>
               <br>
               <h2>Deskripsi Makanan</h2>
-              <p>Special Beef Burger ini adalah salah satu makanan best seller di Foodies dengan potongan ayam bagian dada yang sangat tender dan soft berbalut dengan tepung dan di goreng hingga golden brown, lalu di tambahkan dengan sayuran yang segar dan fresh serta di balut dengan Roti Bun yang semakin membuatnya menggugah selera.</p>
+              <p>Special Beef Burger Salah satu menu yang wajib untuk dicoba. Daging yang digunakan merupakan 100%  daging sapi berkualitas menggunakan berbagai rempah yang dipanggang dengan sempurna dan dilengkapi sayuran dan acar timun yang fresh.</p>
               <h2>Bahan-Bahan</h2>
               <ul>
                 <li><p>1/2 sdm olive oil</p> </li>
@@ -65,7 +65,7 @@
               <h1>Chiken Fry Pack With Mayonnaise Sauce</h1>
               <br>
               <h2>Deskripsi Makanan</h2>
-              <p>Chiken Burger ini adalah salah satu makanan best seller di Foodies dengan potongan ayam bagian dada yang sangat tender dan soft berbalut dengan tepung dan di goreng hingga golden brown, lalu di tambahkan dengan sayuran yang segar dan fresh serta di balut dengan Roti Bun yang semakin membuatnya menggugah selera.</p>
+              <p>Menu makanann cepat saji menggunakan bahan utama ayam berkualitas dilapisi dengan tepung spesial yang menghasilkan tekstur yang crispy.</p>
               <h2>Bahan-Bahan</h2>
               <ul>
                 <li><p>1/2 sdm olive oil</p> </li>
