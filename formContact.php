@@ -1,11 +1,10 @@
-
 <?php 
     if(isset($_POST['kirim'])){
         $nama = $_POST['nama'];
         $email = $_POST['email'];
         $pesan = $_POST['pesan'];
 
-        header('Location:https://wa.me/+6281212825247/?text=Halo nama saya ' . $nama . '%0A%0A' . $pesan . '%0A%0A' . ' Sekian dari saya terima kasih.');
+        header('Location:https://wa.me/+6281212825247/?text=Halo nama saya ' . $nama . '%0A%0A' . $pesan . '%0A%0A' . 'Sekian dari saya terima kasih.');
     }
 ?>
 
